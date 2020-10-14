@@ -1,0 +1,117 @@
+body {
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+
+ul {
+    padding: 0px!important;
+}
+
+.menu-principal{
+width: 100%;
+background-color:#83487b;
+height: 65px;
+}
+
+main {
+margin:0 auto;
+width: 980px ;
+position: relative;
+}
+
+.logo img{
+float:left;
+width: 85px;
+height: 65px;
+}
+
+.logo {
+float: left;
+width: 60%;
+}
+
+.redes-sociais ul li {
+margin-left: 10px;
+display: inline-block;
+float: left;
+list-style: none;
+}
+
+.redes-sociais{
+width: 30%;
+height: 65px;
+float: right;
+}
+
+.icone img{
+width: 35px;
+height: 35px;
+float:left;
+margin: 0 5px 0 5px;
+}
+
+.col-100{
+width: 100%;
+float: left;
+position:relative;
+}
+
+.header-2{
+background-color: #ffffff;
+width: 980px;
+margin: 0 auto;
+padding: 10px;
+    
+}
+
+.menu-urls{
+height: 80px;
+border-bottom: 3px solid #d8d6d6;
+}
+.menu ul li {
+display: inline-block;
+color: #362c2cc7;
+margin-left: 30px;
+height: 30px;
+}
+
+
+.menu ul li a:hover {
+ color: #2020b3;
+ border-bottom: 3px solid #2020b3  ;
+}
+
+.menu ul li a {
+color: #362c2cc7;
+text-decoration: none;
+font-size: 25px;
+text-transform: uppercase;
+   
+}
+.menu{
+width: 70%;
+float: left;
+}
+.busca {
+text-align: center;
+width: 05%;
+float: right;
+}
+.busca input{
+background-image: url('../img/icone-busca.png');
+background-repeat: no-repeat;
+background-position: 93% 7px;
+height: 36px;
+padding:15px;
+width: 190px;
+margin-top:12px ;
+border:1px solid #7c7a7a
+}
+
+.banner {
+   
+  text-align: center;
+ 
+   
+}
