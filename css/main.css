@@ -33,7 +33,8 @@ width: 60%;
 
 .redes-sociais ul li {
 margin-left: 10px;
-display: inline-block;
+
+float: left;
 list-style: none;
 }
 
@@ -102,7 +103,7 @@ float: right;
 background-image: url('../img/icone-busca.png');
 background-repeat: no-repeat;
 background-position: 93% 7px;
-height: 36px;
+height: 2px;
 padding:15px;
 width: 190px;
 margin-top:12px ;
