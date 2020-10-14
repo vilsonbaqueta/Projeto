@@ -5,7 +5,7 @@ margin: 0 auto;
 }
 
 ul {
-    padding: 0px!important;
+padding: 0px!important;
 }
 
 .menu-principal{
@@ -69,6 +69,7 @@ padding: 10px;
 height: 80px;
 border-bottom: 3px solid #d8d6d6;
 }
+
 .menu ul li {
 display: inline-block;
 color: #362c2cc7;
@@ -78,17 +79,17 @@ height: 30px;
 
 
 .menu ul li a:hover {
- color: #2020b3;
- border-bottom: 3px solid #2020b3  ;
+color: #2020b3;
+border-bottom: 3px solid #2020b3  ;
 }
 
 .menu ul li a {
 color: #362c2cc7;
 text-decoration: none;
 font-size: 25px;
-text-transform: uppercase;
-   
+text-transform: uppercase;   
 }
+
 .menu{
 width: 70%;
 float: left;
@@ -110,5 +111,5 @@ border:1px solid #7c7a7a
 }
 
 .banner {   
-  text-align: center;    
+text-align: center;    
 }
