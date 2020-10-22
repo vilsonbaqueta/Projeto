@@ -3,6 +3,44 @@
     <head>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>Halo Odontologia</title>
+
+
+        <script type="text/javascript">
+            function verifica()
+            {
+              var n, t, e, h; 
+
+              n = document.FormularioContato.txtnome.value;
+              if (n.length == 0)
+              {
+                  alert ("Preencha corretamente seu nome!");
+                  document.FormularioContato.txtnome.style.background = "yellow";
+                  document.FormularioContato.txtnome.focus();
+                  return false;
+              }
+              t = document.FormularioContato.txttelefone.value;
+              if (isNaN(t) || t.length <= 10)
+              {
+                  alert ("Preencha corretamente seu telefone com DDD!");
+                  document.FormularioContato.txttelefone.style.background = "yellow";
+                  document.FormularioContato.txttelefone.focus();
+                  return false;
+              }                          
+              e = document.FormularioContato.txtemail.value;
+              if ( e.indexOf("@") < 0)
+              {
+                  alert ("Preencha corretamente seu e-mail!");
+                  document.FormularioContato.txtemail.style.background = "yellow";
+                  document.FormularioContato.txtemail.focus();
+                  return false;
+              }
+
+              document.FormularioContato.submit();
+            }
+
+
+
+        </script>
     </head>
 
     <body>
@@ -51,6 +89,20 @@
         </main>
         <div class="banner">
             <img src="./img/banner.jpg"/>
+        </div>
+        <div class=formulario>
+            <form  name="FormularioContato" method="post" action="gravar.jsp">
+                Nome Completo:<br/>
+                <input type="text" name="txtnome"><br/>
+                Telefone (fixo ou whatsapp):<br/>
+                <input type="text" name="txttelefone"><br/>
+                Em-mail:<br/>
+                <input type="text" name="txtemail"><br/>
+                Horario preferencial para contato:<br/>
+                <input type="text" name="txthorario"><br/>
+                <input type="button" value="enviar" onclick="verifica()">
+
+            </form>
         </div>
         
 
