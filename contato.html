@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>Halo Odontologia</title>
 
@@ -90,20 +91,24 @@
         <div class="banner">
             <img src="./img/banner.jpg"/>
         </div>
-        <div class=formulario>
+        <fieldset class=formulario>
+            <legend>Contato</legend>
             <form  name="FormularioContato" method="post" action="gravar.jsp">
                 Nome Completo:<br/>
-                <input type="text" name="txtnome"><br/>
+                <input type="text" name="txtnome" ><br/><br/>
                 Telefone (fixo ou whatsapp):<br/>
-                <input type="text" name="txttelefone"><br/>
+                <input type="text" name="txttelefone"placeholder="sem traço, ou espaço"><br/><br/>
                 Em-mail:<br/>
-                <input type="text" name="txtemail"><br/>
+                <input type="text" name="txtemail" placeholder="e-mail@domínio"><br/><br/>
                 Horario preferencial para contato:<br/>
-                <input type="text" name="txthorario"><br/>
+                <input type="radio" name="txthorario" value="Manha" checked>Manhã<br/>
+                <input type="radio" name="txthorario" value="Tarde">Tarde<br/>
+                <input type="radio" name="txthorario" value="Noite">Noite<br/><br/>
                 <input type="button" value="enviar" onclick="verifica()">
 
             </form>
-        </div>
+            
+        </fieldset>
         
 
 
