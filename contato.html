@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <title>Halo Odontologia</title>
 
@@ -90,25 +90,49 @@
         </main>
         <div class="banner">
             <img src="./img/banner.jpg"/>
-        </div>
-        <fieldset class=formulario>
-            <legend>Contato</legend>
-            <form  name="FormularioContato" method="post" action="gravar.jsp">
-                Nome Completo:<br/>
-                <input type="text" name="txtnome" ><br/><br/>
-                Telefone (fixo ou whatsapp):<br/>
-                <input type="text" name="txttelefone"placeholder="sem traço, ou espaço"><br/><br/>
-                Em-mail:<br/>
-                <input type="text" name="txtemail" placeholder="e-mail@domínio"><br/><br/>
-                Horario preferencial para contato:<br/>
-                <input type="radio" name="txthorario" value="Manha" checked>Manhã<br/>
-                <input type="radio" name="txthorario" value="Tarde">Tarde<br/>
-                <input type="radio" name="txthorario" value="Noite">Noite<br/><br/>
-                <input type="button" value="enviar" onclick="verifica()">
+        </div class= frm>
+        <br/><br/>
 
-            </form>
+          <form  class="form1" name="FormularioContato" method="post" action="gravar.jsp">
+              <fieldset >
+                  <legend><h2>Fale Conosco:</h2></legend>            
+                      
+                      
+              </fieldset>
+
+              <fieldset >
+                  <legend>Nome Completo:</legend>            
+                      <br/>
+                      <input type="text" name="txtnome"placeholder="Digite seu nome!" ><br/><br/>
+              </fieldset>
+              <fieldset >
+                  <legend>Telefone (fixo ou whatsapp):</legend>
+                      <br/>
+                      <input type="text" name="txttelefone"placeholder="sem traço, ou espaço"><br/><br/>
+              </fieldset>
+              <fieldset >
+                  <legend>Em-mail:</legend>
+                      <br/>
+                      <input type="text" name="txtemail" placeholder="e-mail@domínio"><br/><br/>
+              </fieldset>
+              <fieldset >
+                  <legend>Horario preferencial para contato:</legend>
+                      <br/>
+                      <input type="radio" name="txthorario" value="Manha" checked>Manhã<br/>
+                      <input type="radio" name="txthorario" value="Tarde">Tarde<br/>
+                      <input type="radio" name="txthorario" value="Noite">Noite<br/><br/>
+              </fieldset>
+              <fieldset >
+                  <input class="btn"  type="button" value="enviar" onclick="verifica()" >
+              </fieldset>
+
+          </form>
+          <div class="gmap" >
+              <legend class="gmapLeg">Nossa Localização:</legend>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14639.419274047365!2d-46.5326284!3d-23.4657008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1abec3c199553a2!2sHalo%20Odontologia!5e0!3m2!1spt-BR!2sbr!4v1604431006812!5m2!1spt-BR!2sbr" width="400" height="350" frameborder="2" style="border:2;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
             
-        </fieldset>
+        
         
 
 

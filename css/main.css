@@ -114,8 +114,33 @@ border:1px solid #7c7a7a
 text-align: center;    
 }
 
-.formulario {
-    float: left;
-    text-align: center;
-   
+
+.form1 {
+	border:1px solid #ccc;
+	float: left;
+	padding: 10px;
+	margin-left: 25%;
+	font:16px verdana, Geneva, sana-serif; color:#999;
+}
+.form1 input{
+	padding: 4px;
+	width:350px;
+	display: block;
+}
+.form1 .btn{
+	width: 100px;
+	cursor:pointer;
+}
+
+.gmap {
+	
+
+	float: left;
+	padding: 20px;
+	
+	margin-top: 3px;
+}
+.gmap .gmapLeg {
+	text-align: center;
+	font-size:25px;
 }
