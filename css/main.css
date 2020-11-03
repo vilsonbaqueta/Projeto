@@ -133,14 +133,57 @@ text-align: center;
 }
 
 .gmap {
-	
-
 	float: left;
 	padding: 20px;
-	
 	margin-top: 3px;
 }
 .gmap .gmapLeg {
 	text-align: center;
 	font-size:25px;
 }
+.ctt {
+	margin-left:45%;
+	margin-top:690px;
+	position: absolute;
+	font-size: 20px;
+	float: right;
+	padding: 5px;
+	
+}
+
+.tratamentos1 {
+	float: left;
+	padding: 20px;
+	margin-left: 20%;
+	margin-top: 60px;
+
+}
+.tratamentos1 img {
+	width: 300px;
+	height: 300px;	
+	margin-top: 10px;
+	margin-bottom: 50px;
+
+}
+.tratamentos2 img {
+	width: 300px;
+	height: 300px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+
+}
+.tratamentos2 {
+	float: right;
+	padding: 20px;
+	margin-right:20%;
+	margin-top: 60px;
+
+}
+
+.tratamentos1 legend {
+	font-size: 25px;
+}
+.tratamentos2 legend {
+	font-size: 25px;
+}
+
