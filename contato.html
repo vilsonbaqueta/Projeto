@@ -13,28 +13,36 @@
 
               n = document.FormularioContato.txtnome.value;
               if (n.length == 0)
-              {
+                {
                   alert ("Preencha corretamente seu nome!");
                   document.FormularioContato.txtnome.style.background = "yellow";
                   document.FormularioContato.txtnome.focus();
                   return false;
-              }
+                }
               t = document.FormularioContato.txttelefone.value;
               if (isNaN(t) || t.length <= 10)
-              {
+                {
                   alert ("Preencha corretamente seu telefone com DDD!");
                   document.FormularioContato.txttelefone.style.background = "yellow";
                   document.FormularioContato.txttelefone.focus();
                   return false;
-              }                          
+                }                          
               e = document.FormularioContato.txtemail.value;
               if ( e.indexOf("@") < 0)
-              {
+                {
                   alert ("Preencha corretamente seu e-mail!");
                   document.FormularioContato.txtemail.style.background = "yellow";
                   document.FormularioContato.txtemail.focus();
                   return false;
-              }
+                }
+              h = document.FormularioContato.txthorario.value;
+              if (h.length == 0)
+                {
+                  alert ("Preencha corretamente o horário preferencial!");
+                  document.FormularioContato.txthorario.style.background = "yellow";
+                  return false;
+                }
+
 
               document.FormularioContato.submit();
             }
@@ -111,16 +119,15 @@
                       <input type="text" name="txttelefone"placeholder="sem traço, ou espaço"><br/><br/>
               </fieldset>
               <fieldset >
-                  <legend>Em-mail:</legend>
+                  <legend>e-mail:</legend>
                       <br/>
                       <input type="text" name="txtemail" placeholder="e-mail@domínio"><br/><br/>
               </fieldset>
               <fieldset >
                   <legend>Horario preferencial para contato:</legend>
                       <br/>
-                      <input type="radio" name="txthorario" value="Manha" checked>Manhã<br/>
-                      <input type="radio" name="txthorario" value="Tarde">Tarde<br/>
-                      <input type="radio" name="txthorario" value="Noite">Noite<br/><br/>
+                      <input type="text" name="txthorario" placeholder="manhã, tarde ou noite."><br/>
+                      
               </fieldset>
               <fieldset >
                   <input class="btn"  type="button" value="enviar" onclick="verifica()" >
